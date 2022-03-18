@@ -1,0 +1,46 @@
+{
+  "name": "neo-utils",
+  "version": "0.0.1",
+  "description": "js常用工具库",
+  "author": "neohan",
+  "main": "dist/index",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "utils",
+    "neo",
+    "tools",
+    "deepClone",
+    "clipboard"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neohan666/neo-utils.git"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.10"
+  },
+  "peerDependencies": {
+    "clipboard": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "typescript": "^4.6.2"
+  },
+  "typings": "dist/index.d.ts",
+  "sideEffects": false
+}
