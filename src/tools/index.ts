@@ -5,10 +5,6 @@
  * @LastEditTime: 2022-03-18
  * @LastEditors: Neo
  */
-interface ObjectType {
-  [propName: string]: any;
-}
-
 /**
  * @description: 日期时间格式化
  * @param {Date | number | string} time js的date类型、时间戳、格式化后的日期格式
@@ -83,7 +79,7 @@ function judgeNaN (val: any): boolean {
  * @param {object} obj 对象数据
  * @return {object}
  */
-function filterObject (obj: ObjectType): ObjectType {
+function filterObject (obj: { [propName: string]: any; }): { [propName: string]: any; } {
   const isValid = (val: any) => {
     return val !== undefined && !judgeNaN(val) && val !== null
   }
@@ -102,7 +98,7 @@ function filterObject (obj: ObjectType): ObjectType {
  * @param {object} obj 对象参数
  * @return {string} a=1&b=2&c=3
  */
-function objToUrlParams (obj: ObjectType): string {
+function objToUrlParams (obj: { [propName: string]: any; }): string {
   let str = ''
   Object.keys(obj).forEach((v) => {
     const val = obj[v]
@@ -118,10 +114,10 @@ function objToUrlParams (obj: ObjectType): string {
  * @param {string} url 指定地址，默认取当前页地址
  * @return {string} { a: 1, b: 2, c: 3 }
  */
-function getQueryObject (url?: string): ObjectType {
+function getQueryObject (url?: string): { [propName: string]: any; } {
   url = url || window?.location.href || ''
   const questionIndex = url.lastIndexOf('?')
-  const obj: ObjectType = {}
+  const obj: { [propName: string]: any; } = {}
   if (questionIndex > 0) {
     const search = url.substring(questionIndex + 1)
     const reg = /([^?&=]+)=([^?&=]*)/g
