@@ -1,16 +1,16 @@
-# n-utils
+# j-utils
 js常用工具库。
 
 ## 1、安装
 ```js
-npm i neo-utils -S
+npm i j-utils -S
 ```
 
 ## 2、使用
 ### (1) deepClone
 数据深克隆/深拷贝
 ```js
-import { deepClone } from 'neo-utils'
+import { deepClone } from 'j-utils'
 
 const newVal = deepClone(val)
 ```
@@ -18,7 +18,7 @@ const newVal = deepClone(val)
 ### (2) clipboard
 剪贴板复制
 ```js
-import { clipboard } from 'neo-utils'
+import { clipboard } from 'j-utils'
 
 clipboard('hello')
   .then(res => {
@@ -32,7 +32,7 @@ clipboard('hello')
 ### (3) platform
 运行环境判断
 ```js
-import { platform } from 'neo-utils'
+import { platform } from 'j-utils'
 
 // platform API：
 {
@@ -52,7 +52,7 @@ import { platform } from 'neo-utils'
 ### (4) tools
 js通用函数
 ```js
-import { tools } from 'neo-utils'
+import { tools } from 'j-utils'
 
 // tools API：
 {

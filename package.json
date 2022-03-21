@@ -1,5 +1,5 @@
 {
-  "name": "n-utils",
+  "name": "j-utils",
   "version": "0.0.3",
   "description": "js常用工具库",
   "author": "neohan",
@@ -12,7 +12,8 @@
     "neo",
     "tools",
     "deepClone",
-    "clipboard"
+    "clipboard",
+    "jutils"
   ],
   "license": "MIT",
   "files": [
@@ -20,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/neohan666/neo-utils.git"
+    "url": "git://github.com/neohan666/j-utils.git"
   },
   "dependencies": {
     "clipboard": "^2.0.10"
