@@ -1,4 +1,11 @@
 /**
+ * @Description: 通用工具函数
+ * @Author: Neo
+ * @Date: 2022-03-18
+ * @LastEditTime: 2022-03-18
+ * @LastEditors: Neo
+ */
+/**
  * @description: 日期时间格式化
  * @param {Date | number | string} time js的date类型、时间戳、格式化后的日期格式
  * @param {string} format 自定义时间格式，选填，默认为'{y}-{m}-{d} {h}:{i}:{s}'，星期为{a}

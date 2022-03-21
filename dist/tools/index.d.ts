@@ -5,9 +5,6 @@
  * @LastEditTime: 2022-03-18
  * @LastEditors: Neo
  */
-interface ObjectType {
-    [propName: string]: any;
-}
 /**
  * @description: 日期时间格式化
  * @param {Date | number | string} time js的date类型、时间戳、格式化后的日期格式
@@ -33,19 +30,27 @@ declare function judgeNaN(val: any): boolean;
  * @param {object} obj 对象数据
  * @return {object}
  */
-declare function filterObject(obj: ObjectType): ObjectType;
+declare function filterObject(obj: {
+    [propName: string]: any;
+}): {
+    [propName: string]: any;
+};
 /**
  * @description: 对象参数序列化（过滤undefined和NaN,自动encode）
  * @param {object} obj 对象参数
  * @return {string} a=1&b=2&c=3
  */
-declare function objToUrlParams(obj: ObjectType): string;
+declare function objToUrlParams(obj: {
+    [propName: string]: any;
+}): string;
 /**
  * @description: 获取地址参数
  * @param {string} url 指定地址，默认取当前页地址
  * @return {string} { a: 1, b: 2, c: 3 }
  */
-declare function getQueryObject(url?: string): ObjectType;
+declare function getQueryObject(url?: string): {
+    [propName: string]: any;
+};
 /**
  * @description: 创建唯一的字符串
  * @return {string} ojgdvbvaua40
