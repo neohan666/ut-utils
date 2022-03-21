@@ -1,7 +1,5 @@
-# neo-utils
+# n-utils
 js常用工具库。
-
-+ 支持TS
 
 ## 1、安装
 ```js
@@ -24,10 +22,10 @@ import { clipboard } from 'neo-utils'
 
 clipboard('hello')
   .then(res => {
-    console.log('复制成功')
+    console.log('copy success')
   })
   .catch(err => {
-    console.log('复制失败')
+    console.log('copy fail')
   })
 ```
 
