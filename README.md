@@ -1,16 +1,16 @@
-# j-utils
+# ut-utils
 js常用工具库。
 
 ## 1、安装
 ```js
-npm i j-utils -S
+npm i ut-utils -S
 ```
 
 ## 2、使用
 ### (1) deepClone
 数据深克隆/深拷贝
 ```js
-import { deepClone } from 'j-utils'
+import { deepClone } from 'ut-utils'
 
 const newVal = deepClone(val)
 ```
@@ -18,7 +18,7 @@ const newVal = deepClone(val)
 ### (2) clipboard
 剪贴板复制
 ```js
-import { clipboard } from 'j-utils'
+import { clipboard } from 'ut-utils'
 
 clipboard('hello')
   .then(res => {
@@ -32,7 +32,7 @@ clipboard('hello')
 ### (3) platform
 运行环境判断
 ```js
-import { platform } from 'j-utils'
+import { platform } from 'ut-utils'
 
 // platform API：
 {
@@ -52,7 +52,7 @@ import { platform } from 'j-utils'
 ### (4) tools
 js通用函数
 ```js
-import { tools } from 'j-utils'
+import { tools } from 'ut-utils'
 
 // tools API：
 {
