@@ -2,7 +2,7 @@
  * @Description: 剪贴板复制
  * @Author: Neo
  * @Date: 2022-03-18
- * @LastEditTime: 2022-03-18
+ * @LastEditTime: 2022-04-18
  * @LastEditors: Neo
  */
 import Clipboard from 'clipboard'
@@ -12,6 +12,7 @@ import Clipboard from 'clipboard'
   * @return {promise} 返回promise对象
   */
 export default function (text: string) {
+  text = text || ''
   return new Promise((resolve, reject) => {
     const element = document.createElement('div')
     const clipboard = new Clipboard(element, {

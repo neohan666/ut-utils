@@ -1,6 +1,6 @@
 {
   "name": "ut-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "js常用工具库",
   "author": "neohan",
   "main": "dist/index",
